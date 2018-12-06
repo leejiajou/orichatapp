@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "description": "Example group chat app built with socket.io and react.",
   "scripts": {
-    "server": "node ./server/server.js",
-    "client": "webpack-dev-server"
+	"server": "node ./server/server.js",
+    "client": "webpack-dev-server",
+    "dev": "(start npm run server && start npm run client) || (npm run server & npm run client)",
+    "start": "npm run dev"
   },
   "keywords": [
     "websocket",
